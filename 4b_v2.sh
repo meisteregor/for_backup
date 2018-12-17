@@ -9,7 +9,7 @@ usage_msg="4_backup_v2 help: default run will backup your configs from /etc into
 much_arg_error_msg="Error: too much arguments, -h or --help for help"
 single_arg_error_msg="Error: argument in single quantity, -h or --help for help"
 unknown_error_msg="Unknown arguments error, -h or --help for help"
-email="sysadmin@email.domen"
+email="sysadmin@email.com
 
 # GATEWAY FOR SCRIPT BODY:
 # help menu argument handler
@@ -97,8 +97,8 @@ secure_touch "$tmp_error_file"
 
 # gathering info about input parameters
 source_weight=$(du -d0 "$source" | awk '{ print $1 }')
-space_recommended=$(($source_weight*7/10*2)) # best practices (hotia ya ponimaju 4to my ne vse itak unosim, no kto znaet, 4to nam podkinut v o4erednoj raz)
-space_needed=$((space_recommended*2)) # considering megaconfig existence (slu4aj esli nam podsunut odni configi v source)
+space_recommended=$(($source_weight*7/10*2)) # best practices
+space_needed=$((space_recommended*2)) # considering megaconfig existence 
 destination_free=$(df "$destination" | awk '{ print $4 }' | tail -1)
 
 # checking if we have enough space for a backup procedure
