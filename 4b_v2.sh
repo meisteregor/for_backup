@@ -9,7 +9,7 @@ usage_msg="4_backup_v2 help: default run will backup your configs from /etc into
 much_arg_error_msg="Error: too much arguments, -h or --help for help"
 single_arg_error_msg="Error: argument in single quantity, -h or --help for help"
 unknown_error_msg="Unknown arguments error, -h or --help for help"
-email="sysadmin@email.com
+email="sysadmin@email.com"
 
 # GATEWAY FOR SCRIPT BODY:
 # help menu argument handler
